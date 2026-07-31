@@ -9,8 +9,8 @@ const CONCRETE_DARK = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqH
 export default function HeroSection() {
   const handleScrollDown = (e: React.MouseEvent) => {
     e.preventDefault();
-    const el = document.querySelector("#shisha");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    // Use hash navigation instead of scrollIntoView
+    window.location.hash = "shisha";
   };
 
   return (
