@@ -3,9 +3,9 @@
   Beton-Textur v2 + Event-Bild Hintergrund, weisse Schrift (#FFFFFF)
 */
 
-const EVENT_IMG = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqHz73ytRnf1iRkfWBV/sandbox/Ftog5APT8bANdVZRQustPk-img-5_1771352634000_na1fn_ZXZlbnQtYXRtb3NwaGVyZQ.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdFVKVHFIejczeXRSbmYxaVJrZldCVi9zYW5kYm94L0Z0b2c1QVBUOGJBTmRWWlJRdXN0UGstaW1nLTVfMTc3MTM1MjYzNDAwMF9uYTFmbl9aWFpsYm5RdFlYUnRiM053YUdWeVpRLmpwZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QlGjiyr6TS7vRYCdmp94qnW9T3wYjYmSHK6qPXeRiMExKF2Nqx99GA6ZWeylW72htrFXbJkJ7BdgzbPKb5Jhv0QUeCMX6rBOeRPAdsRzO78du0gFpfATb-9xYvcBh7yPxcDVPd-wQn~hmIF5V9~UrUmvMqY7hcZ6FAXzeBN2qrCII4xQAuBVe5MfJ7qMoVzNcu7xVfPubB14U1NojZ8MPz1nbEgQ9T5Psq3u1CXLwrvSuTjDsZKeAPDH0E6BHdi23z8aVbsTQHmVI64Z1raDMYd2IkIzn--TmVMSx~uWnG8DBgrpHfoqGfeeKvb4AdVcgv6S8sxvdrSrj8pSA~MdXA__";
+// Removed Manus CDN URL
 
-const CONCRETE_LIGHT = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqHz73ytRnf1iRkfWBV/sandbox/P0f8oV4qz0oorICoYdxEt9-img-2_1771486598000_na1fn_Y29uY3JldGUtdGV4dHVyZS1saWdodA.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdFVKVHFIejczeXRSbmYxaVJrZldCVi9zYW5kYm94L1AwZjhvVjRxejBvb3JJQ29ZZHhFdDktaW1nLTJfMTc3MTQ4NjU5ODAwMF9uYTFmbl9ZMjl1WTNKbGRHVXRkR1Y0ZEhWeVpTMXNhV2RvZEEuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=nsjn3Ax1HZcxNnq8Rg2iTPXqokKJm27zBcwz0W2znJ5ZU8vrzVE9Egg1jGtvL4gzXZBRznCjwRjKyrz~n97UxZD01CHqV2-04RbpvNwR~fztNCEtl-iDU3MPX~ppH1DSjk3H4aIpBmPonINXa6DlT~Cke0HpcLOmgbJeop~q7oOwAENHojiWwh5rO4IDGNlP~RZCgIYRXTcGPRYGGp~TvGkTk8UH4JeF2e9SaEjRqFiYBhwUZfNvRQJjIEuHdQaur4SGcihsPMdqPoVQmnRQiI1zdP3fAGXivI2QdyvqfOTt~PAruOXfPG0cw-7mVsMjUymFch2LkVUs-1VtqCyH4g__";
+// Removed Manus CDN URL
 
 const eventFeatures = [
   {
@@ -60,9 +60,6 @@ export default function EventsSection() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url("${CONCRETE_LIGHT}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           opacity: 0.15,
         }}
       />
@@ -70,9 +67,6 @@ export default function EventsSection() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url("${EVENT_IMG}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           opacity: 0.1,
         }}
       />
