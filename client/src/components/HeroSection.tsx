@@ -4,13 +4,13 @@
   Weisse Schrift (#FFFFFF)
 */
 
-// Removed Manus CDN URL - using CSS background instead
+const CONCRETE_DARK = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqHz73ytRnf1iRkfWBV/sandbox/P0f8oV4qz0oorICoYdxEt9-img-1_1771486592000_na1fn_Y29uY3JldGUtdGV4dHVyZS12Mg.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdFVKVHFIejczeXRSbmYxaVJrZldCVi9zYW5kYm94L1AwZjhvVjRxejBvb3JJQ29ZZHhFdDktaW1nLTFfMTc3MTQ4NjU5MjAwMF9uYTFmbl9ZMjl1WTNKbGRHVXRkR1Y0ZEhWeVpTMTJNZy5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Ph9b~6ncliEgelnKyZviD-3tcA2MNL0OrFL~oeH~691Gr1UqTXgoU6S187ABq5pNYczSQ6c9dBoRzuaGa8tyfcXiTvJR0~emPqj3XTMip8Ji-NSs59YRTvAp4MildKtrnAvtx6UDBab2wEXF-fCuQ2LcEII-EkxgyLUqpV9kA2t4e2O-urJXAJhKG5KR1y7kOAp55KXKxShDMEkwFP1gHLMBuxvHiUPkHAjXDppkUTrrt471UqW8d2aSBQMckp5T93L9c3f0IbtCHrZ0dnJuKmHcBJhTLxnGtAnMSr9blaJDlZGSXjIOmWf0NRAw2POFP-fNWTNRBOINPLTzGJSE1A__";
 
 export default function HeroSection() {
   const handleScrollDown = (e: React.MouseEvent) => {
     e.preventDefault();
-    // Use hash navigation instead of scrollIntoView
-    window.location.hash = "shisha";
+    const el = document.querySelector("#shisha");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -23,6 +23,10 @@ export default function HeroSection() {
       <div
         className="absolute inset-0"
         style={{
+          backgroundImage: `url("${CONCRETE_DARK}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           opacity: 0.6,
         }}
       />
@@ -64,20 +68,17 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-4">
-        {/* Logo — SVG Text instead of CDN image */}
-        <h1
-          className="heading-display"
+        {/* Logo Image */}
+        <img
+          src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663163726953/xTdiFxceotaSZaCX.png"
+          alt="NOKUNA"
           style={{
-            fontSize: "clamp(60px, 15vw, 140px)",
-            color: "#FFFFFF",
+            width: "clamp(500px, 85vw, 1200px)",
+            height: "auto",
             marginBottom: "24px",
-            textShadow: "0 2px 20px rgba(0,0,0,0.5)",
-            letterSpacing: "0.1em",
-            fontWeight: 700,
+            filter: "drop-shadow(0 2px 20px rgba(0,0,0,0.5))",
           }}
-        >
-          NOKUNA
-        </h1>
+        />
 
         {/* Accent line */}
         <div className="accent-line mx-auto" style={{ marginBottom: "24px", width: "80px" }} />

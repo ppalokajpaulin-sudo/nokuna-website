@@ -4,7 +4,7 @@
   Kontaktdaten: +41 79 939 99 69, Instagram, TikTok
 */
 
-// Removed Manus CDN URL
+const CONCRETE_LIGHT = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqHz73ytRnf1iRkfWBV/sandbox/P0f8oV4qz0oorICoYdxEt9-img-2_1771486598000_na1fn_Y29uY3JldGUtdGV4dHVyZS1saWdodA.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdFVKVHFIejczeXRSbmYxaVJrZldCVi9zYW5kYm94L1AwZjhvVjRxejBvb3JJQ29ZZHhFdDktaW1nLTJfMTc3MTQ4NjU5ODAwMF9uYTFmbl9ZMjl1WTNKbGRHVXRkR1Y0ZEhWeVpTMXNhV2RvZEEuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=nsjn3Ax1HZcxNnq8Rg2iTPXqokKJm27zBcwz0W2znJ5ZU8vrzVE9Egg1jGtvL4gzXZBRznCjwRjKyrz~n97UxZD01CHqV2-04RbpvNwR~fztNCEtl-iDU3MPX~ppH1DSjk3H4aIpBmPonINXa6DlT~Cke0HpcLOmgbJeop~q7oOwAENHojiWwh5rO4IDGNlP~RZCgIYRXTcGPRYGGp~TvGkTk8UH4JeF2e9SaEjRqFiYBhwUZfNvRQJjIEuHdQaur4SGcihsPMdqPoVQmnRQiI1zdP3fAGXivI2QdyvqfOTt~PAruOXfPG0cw-7mVsMjUymFch2LkVUs-1VtqCyH4g__";
 
 const openingHours = [
   { day: "Montag – Donnerstag", time: "11:00 – 00:30" },
@@ -24,6 +24,9 @@ export default function LocationSection() {
       <div
         className="absolute inset-0"
         style={{
+          backgroundImage: `url("${CONCRETE_LIGHT}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           opacity: 0.18,
         }}
       />

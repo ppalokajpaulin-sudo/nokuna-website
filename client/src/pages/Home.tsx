@@ -20,14 +20,6 @@ import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   useEffect(() => {
-    // Prevent auto-scroll on page load
-    window.scrollTo(0, 0);
-
-    // Apply scroll-padding after layout is stable
-    const timer = setTimeout(() => {
-      document.documentElement.classList.add("ready");
-    }, 100);
-
     // Scroll reveal animation
     const observer = new IntersectionObserver(
       (entries) => {
@@ -44,10 +36,7 @@ export default function Home() {
       observer.observe(el);
     });
 
-    return () => {
-      clearTimeout(timer);
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (

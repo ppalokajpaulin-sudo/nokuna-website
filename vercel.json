@@ -1,9 +1,0 @@
-{
-  "buildCommand": "npm run build",
-  "startCommand": "npm start",
-  "outputDirectory": "dist",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "installCommand": "npm install -g pnpm && pnpm install"
-}

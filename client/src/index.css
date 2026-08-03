@@ -144,10 +144,6 @@
   
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 0;
-  }
-
-  html.ready {
     scroll-padding-top: 80px;
   }
 }
@@ -211,27 +207,28 @@
   }
 }
 
-/* Scroll animation base — optimized for CLS */
+/* Scroll animation base */
 .scroll-reveal {
   opacity: 0;
-  transition: opacity 0.8s ease-out;
-  will-change: opacity;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .scroll-reveal.visible {
   opacity: 1;
+  transform: translateY(0);
 }
 
-/* Smoke animation for hero — containment for CLS */
+/* Smoke animation for hero */
 @keyframes smoke-drift {
-  0% { transform: translateX(-10%) translateY(0); opacity: 0; }
+  0% { transform: translateX(-10%) translateY(0) scale(1); opacity: 0; }
   20% { opacity: 0.04; }
   50% { opacity: 0.06; }
   80% { opacity: 0.03; }
-  100% { transform: translateX(10%) translateY(-100%); opacity: 0; }
+  100% { transform: translateX(10%) translateY(-100%) scale(1.5); opacity: 0; }
 }
 
-/* Scroll indicator bounce — optimized */
+/* Scroll indicator bounce */
 @keyframes scroll-bounce {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
 }

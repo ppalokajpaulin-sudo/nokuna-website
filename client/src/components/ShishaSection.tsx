@@ -3,9 +3,9 @@
   Beton-Textur v2 sichtbar, weisse Schrift (#FFFFFF)
 */
 
-// Removed Manus CDN URL
+const SHISHA_IMG = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqHz73ytRnf1iRkfWBV/sandbox/Ftog5APT8bANdVZRQustPk-img-3_1771352658000_na1fn_c2hpc2hhLWF0bW9zcGhlcmU.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdFVKVHFIejczeXRSbmYxaVJrZldCVi9zYW5kYm94L0Z0b2c1QVBUOGJBTmRWWlJRdXN0UGstaW1nLTNfMTc3MTM1MjY1ODAwMF9uYTFmbl9jMmhwYzJoaExXRjBiVzl6Y0dobGNtVS5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=jI0R4i3IMdfBZtoY8bXO03kOSo1v4rQ~bFjpXe1SQiNfJ93yK0PBp4tfe7bRrojdJku~YXK3wc0Ly5cLmCSNEiPOAvz4FN7yrhLfWSmQ580iq1C-naS-juqdnPnW71JZA6DxW9Ot2Tg-Ny9zgeVG8k1vM2jWCMmNtLlj8~DfyYlAJG~fPXh394WqweBWGIyHut1TkFPW6mSle5BJY6NCuNOCpnFJRds7m6ULy-cYrrdzkh9US9HTnAdV2grRNZOWt3l~Gee4eg49tTJs8Rc7IbWPhgl0Kzb1NqZrQXDu9SyWsOSaMQBOA39SVjiXZ-P2VjqAerLOdLV~BQ-xxE3E9A__";
 
-// Removed Manus CDN URL
+const CONCRETE_LIGHT = "https://private-us-east-1.manuscdn.com/sessionFile/tUJTqHz73ytRnf1iRkfWBV/sandbox/P0f8oV4qz0oorICoYdxEt9-img-2_1771486598000_na1fn_Y29uY3JldGUtdGV4dHVyZS1saWdodA.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdFVKVHFIejczeXRSbmYxaVJrZldCVi9zYW5kYm94L1AwZjhvVjRxejBvb3JJQ29ZZHhFdDktaW1nLTJfMTc3MTQ4NjU5ODAwMF9uYTFmbl9ZMjl1WTNKbGRHVXRkR1Y0ZEhWeVpTMXNhV2RvZEEuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=nsjn3Ax1HZcxNnq8Rg2iTPXqokKJm27zBcwz0W2znJ5ZU8vrzVE9Egg1jGtvL4gzXZBRznCjwRjKyrz~n97UxZD01CHqV2-04RbpvNwR~fztNCEtl-iDU3MPX~ppH1DSjk3H4aIpBmPonINXa6DlT~Cke0HpcLOmgbJeop~q7oOwAENHojiWwh5rO4IDGNlP~RZCgIYRXTcGPRYGGp~TvGkTk8UH4JeF2e9SaEjRqFiYBhwUZfNvRQJjIEuHdQaur4SGcihsPMdqPoVQmnRQiI1zdP3fAGXivI2QdyvqfOTt~PAruOXfPG0cw-7mVsMjUymFch2LkVUs-1VtqCyH4g__";
 
 
 
@@ -20,6 +20,9 @@ export default function ShishaSection() {
       <div
         className="absolute inset-0"
         style={{
+          backgroundImage: `url("${CONCRETE_LIGHT}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           opacity: 0.25,
         }}
       />

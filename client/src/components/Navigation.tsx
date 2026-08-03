@@ -61,7 +61,7 @@ export default function Navigation() {
           {/* Logo */}
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
             <img
-              alt="NOKUNA" style={{ width: "100%", height: "auto" }} className="placeholder"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663163726953/xTdiFxceotaSZaCX.png"
               alt="NOKUNA Logo"
               style={{ height: "210px", width: "auto" }}
             />
